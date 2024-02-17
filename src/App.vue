@@ -1,19 +1,35 @@
 <template>
-  <h1>looser</h1>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <!-- <h1>looser</h1> -->
+  <WelcomePage v-if="!gameStarted" @start-game="handleStartGame" />
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+
+import WelcomePage from './components/WelcomePage.vue';
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+    WelcomePage
+  },
+  data() {
+    return {
+      gameStarted: false,
+      // Other data properties
+    };
+  },
+  methods: {
+    handleStartGame(players) {
+      // Start the game with the provided players' names
+      console.log('Game starting with players:', players);
+      // Set gameStarted to true to hide the WelcomePage
+      this.gameStarted = true;
+    }
   }
+  
 }
 </script>
+
 
 <style>
 #app {
