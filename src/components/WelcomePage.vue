@@ -5,7 +5,10 @@
         <input type="text" v-model="player1Name" placeholder="Enter Player 1 Name">
         <input type="text" v-model="player2Name" placeholder="Enter Player 2 Name">
       </div>
-      <button @click="startGame">Let's Play</button>
+      <!-- Directly navigate to the GameBoard route when the button is clicked -->
+      <router-link :to="{ name: 'GameBoard', query: { player1Name, player2Name } }">
+        <button>Let's Play</button>
+      </router-link>
     </div>
   </template>
   
@@ -16,13 +19,8 @@
         player1Name: '',
         player2Name: ''
       };
-    },
-    methods: {
-      startGame() {
-        // Emit an event to notify the parent component to start the game
-        this.$emit('start-game', { player1Name: this.player1Name, player2Name: this.player2Name });
-      }
     }
+    
   }
   </script>
   
