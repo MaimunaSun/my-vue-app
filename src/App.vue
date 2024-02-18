@@ -1,41 +1,74 @@
 <template>
   <div id="app">
-    <WelcomePage v-if="!gameStarted" @start-game="handleStartGame" />
-    <router-view v-else /> <!-- Render the appropriate component based on the route -->
+    <!-- Apply background color to the entire webpage -->
+    <router-view v-if="!gameStarted" :style="{ backgroundColor: '#0047ab' }" />
+    <router-view v-else />
   </div>
 </template>
 
 <script>
-import WelcomePage from './components/WelcomePage.vue'; // Import the WelcomePage component
-
 export default {
   name: 'App',
-  components: {
-    WelcomePage // Register the WelcomePage component
-  },
   data() {
     return {
       gameStarted: false
     };
-  },
-  methods: {
-    handleStartGame(players) {
-      // Start the game with the provided players' names
-      console.log('Game starting with players:', players);
-      // Set gameStarted to true to hide the WelcomePage and show the GameBoard
-      this.gameStarted = true;
-    }
   }
 }
 </script>
 
 <style>
+/* Reset body margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the content vertically */
 #app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Make the app container take the full height of the viewport */
+}
+
+/* Adjust styles for the entire webpage */
+router-view {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+/* Styles for WelcomePage */
+.WelcomePage {
+  /* Set the background color */
+  background-color: #0047ab; /* Cobalt blue */
+}
+
+/* Styles for GameBoard */
+.GameBoard {
+  /* Set the background color */
+  background-color: #0047ab; /* Cobalt blue */
+}
+
+/* Styles for MemoryHeading */
+.MemoryHeading {
+  /* Set the text color */
+  color: #fff; /* White */
+}
+
+/* Styles for textboxes */
+input {
+  /* Set the background color for input boxes */
+  background-color: aliceblue;
+}
+
+/* Styles for the Let's Play button */
+button {
+  /* Set the background color for the button */
+  background-color: green;
+  /* Add other button styles as needed */
 }
 </style>

@@ -23,7 +23,6 @@ export default {
 
 <style scoped>
 .game-board {
-  background-color: #0047ab; /* Cobalt blue */
   text-align: center;
 }
 </style>

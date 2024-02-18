@@ -42,7 +42,6 @@ export default {
 
 <style scoped>
 .welcome-page {
-  background-color: #0047ab; /* Cobalt blue */
   text-align: center;
 }
 
