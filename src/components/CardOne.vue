@@ -1,11 +1,15 @@
 <template>
     <div :class="{ 'card': true, 'flipped': flipped }" @click="flipCard">
-      <div class="front">Front of Card</div>
-      <div class="back">
+      <div class="front">
+        <!-- Front of Card: Only club.png image and letter "A" -->
         <div class="card-content">
           <img src="@/assets/club.png" alt="Club" class="suit-image">
           <div class="letter">A</div>
         </div>
+      </div>
+      <div class="back">
+        <!-- Back of Card: Cobalt Blue background -->
+        Back of Card
       </div>
     </div>
   </template>
