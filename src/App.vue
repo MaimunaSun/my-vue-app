@@ -1,35 +1,19 @@
 <template>
-  <!-- <h1>looser</h1> -->
-  <WelcomePage v-if="!gameStarted" @start-game="handleStartGame" />
+  <div id="app">
+    <router-view /> <!-- Render the appropriate component based on the route -->
+  </div>
 </template>
 
 <script>
-
-import WelcomePage from './components/WelcomePage.vue';
+import WelcomePage from './components/WelcomePage.vue'; // Import the WelcomePage component
 
 export default {
   name: 'App',
   components: {
-    WelcomePage
-  },
-  data() {
-    return {
-      gameStarted: false,
-      // Other data properties
-    };
-  },
-  methods: {
-    handleStartGame(players) {
-      // Start the game with the provided players' names
-      console.log('Game starting with players:', players);
-      // Set gameStarted to true to hide the WelcomePage
-      this.gameStarted = true;
-    }
+    WelcomePage // Register the WelcomePage component
   }
-  
 }
 </script>
-
 
 <style>
 #app {

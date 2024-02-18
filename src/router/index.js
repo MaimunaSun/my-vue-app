@@ -14,10 +14,21 @@ const router = createRouter({
     {
       path: '/game',
       name: 'GameBoard',
-      component: GameBoard
+      component: GameBoard,
+      meta: { requiresGameStarted: true } // Add meta field to indicate route guard requirement
     }
   ]
 });
 
+router.beforeEach((to, from, next) => {
+  // Check if the route requires the game to be started
+  if (to.meta.requiresGameStarted && !router.app.$root.gameStarted) {
+    next({ name: 'Welcome' }); // Redirect to WelcomePage if game has not started
+  } else {
+    next(); // Proceed to the next route
+  }
+});
+
 export default router;
+
 
