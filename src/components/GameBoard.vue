@@ -10,7 +10,7 @@
     <div class="game-board-layout">
       <!-- Left Box -->
       <div class="box-layout left">
-        <div class="player-name">{{ player2Name }}</div>
+        <div class="player-name">{{ player1Name }}</div>
       </div>
       
       <!-- Middle Box -->
@@ -18,7 +18,7 @@
       
       <!-- Right Box -->
       <div class="box-layout right">
-        <div class="player-name">{{ player1Name }}</div>
+        <div class="player-name">{{ player2Name }}</div>
       </div>
     </div>
   </div>
@@ -72,7 +72,15 @@ export default {
   background-color: #87CEEB; /* Sky Blue */
   padding: 20px;
   border-radius: 10px;
-  flex: 1;
+}
+
+.left,
+.right {
+  width: 300px; /* Set the width of the left and right boxes */
+}
+
+.middle {
+  width: 600px; /* Set the width of the middle box */
 }
 
 .left {
@@ -82,6 +90,7 @@ export default {
 .right {
   margin-left: 10px;
 }
+
 
 /* Styling for Player Name */
 .player-name {
