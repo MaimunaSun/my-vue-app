@@ -8,73 +8,45 @@
         <!-- Secondary Layout with Light Blue Background -->
         <div class="secondary-layout">
           <h1 class="welcome-heading">Welcome to Memory Game</h1>
-          <button class="start-button" @click="startGame">Start Game</button>
+          <button class="start-button" @click="showModal">Start Game</button>
         </div>
       </div>
+  
+      <!-- Player Name Modal -->
+      <PlayerNameModal v-if="showPlayerNameModal" @submit="startGame" />
     </div>
   </template>
   
   <script>
   import MemoryHeading from './MemoryHeading.vue';
-  import { useRouter } from 'vue-router'; // Import useRouter from vue-router
+  import PlayerNameModal from './PlayerNameModal.vue'; // Import the PlayerNameModal component
   
   export default {
     components: {
-      MemoryHeading
+      MemoryHeading,
+      PlayerNameModal
     },
-    setup() {
-      const router = useRouter(); // Initialize router
-  
-      const startGame = () => {
-        // Navigate to the WelcomePage route when startGame button is pressed
-        router.push({ name: 'Welcome' });
+    data() {
+      return {
+        showPlayerNameModal: false
       };
-  
-      return { startGame };
+    },
+    methods: {
+      showModal() {
+        this.showPlayerNameModal = true;
+      },
+      startGame(playerNames) {
+        // Navigate to WelcomePage with player names as query parameters
+        this.$router.push({ 
+          name: 'Welcome',
+          query: playerNames
+        });
+      }
     }
   }
   </script>
   
   <style scoped>
-  /* Styling for the StartPage */
-  .start-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  /* Sapphire Background Layout */
-  .sapphire-layout {
-    background-color: #0F52BA; /* Sapphire Blue */
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  /* Secondary Layout with Light Blue Background */
-  .secondary-layout {
-    background-color: #87CEEB; /* Light Blue */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  /* Styling for the Welcome Heading */
-  .welcome-heading {
-    font-size: 36px; /* Bigger font size */
-    color: #fff; /* White */
-  }
-  
-  /* Styling for the Start Button */
-  .start-button {
-    padding: 10px 40px;
-    background-color: #4caf50; /* Green */
-    color: #fff; /* White */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px; /* Add space between heading and button */
-  }
+  /* Styles for StartPage */
   </style>
   
