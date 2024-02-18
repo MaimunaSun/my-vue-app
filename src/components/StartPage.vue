@@ -15,16 +15,22 @@
   </template>
   
   <script>
-  import MemoryHeading from './MemoryHeading.vue'; // Import the MemoryHeading component
+  import MemoryHeading from './MemoryHeading.vue';
+  import { useRouter } from 'vue-router'; // Import useRouter from vue-router
   
   export default {
     components: {
       MemoryHeading
     },
-    methods: {
-      startGame() {
-        // Your logic to start the game goes here
-      }
+    setup() {
+      const router = useRouter(); // Initialize router
+  
+      const startGame = () => {
+        // Navigate to the WelcomePage route when startGame button is pressed
+        router.push({ name: 'Welcome' });
+      };
+  
+      return { startGame };
     }
   }
   </script>
