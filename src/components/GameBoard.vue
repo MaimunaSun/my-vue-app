@@ -63,7 +63,7 @@ export default {
   display: flex;
   justify-content: space-around;
   width: 1500px; /* Adjust width as needed */
-  height: 60px; /* Adjust height as needed */
+  height: 600px; /* Adjust height as needed */
 }
 
 
@@ -80,7 +80,7 @@ export default {
 }
 
 .middle {
-  width: 800px; /* Set the width of the middle box */
+  width: 700px; /* Set the width of the middle box */
 }
 
 .left {
