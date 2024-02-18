@@ -2,7 +2,7 @@
     <div class="start-page">
       <!-- Memory Heading Component -->
       <MemoryHeading text="Memory" />
-      
+  
       <!-- Sapphire Background Layout -->
       <div class="sapphire-layout">
         <!-- Secondary Layout with Light Blue Background -->
@@ -19,7 +19,7 @@
   
   <script>
   import MemoryHeading from './MemoryHeading.vue';
-  import PlayerNameModal from './PlayerNameModal.vue'; // Import the PlayerNameModal component
+  import PlayerNameModal from './PlayerNameModal.vue';
   
   export default {
     components: {
@@ -36,7 +36,6 @@
         this.showPlayerNameModal = true;
       },
       startGame(playerNames) {
-        // Navigate to WelcomePage with player names as query parameters
         this.$router.push({ 
           name: 'Welcome',
           query: playerNames
@@ -48,5 +47,39 @@
   
   <style scoped>
   /* Styles for StartPage */
+  .start-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .sapphire-layout {
+    background-color: #0F52BA; /* Sapphire Blue */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .secondary-layout {
+    background-color: #87CEEB; /* Light Blue */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .welcome-heading {
+    font-size: 24px;
+    color: #fff; /* White */
+  }
+  
+  .start-button {
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
   </style>
   
