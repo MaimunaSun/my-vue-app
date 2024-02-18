@@ -83,7 +83,7 @@ export default {
   background-color: #0F52BA; /* Sapphire Blue */
   padding: 20px;
   border-radius: 10px;
-  width: 800; /* Adjust width as needed */
+  width: 1000; /* Adjust width as needed */
   height: 400; /* Adjust height as needed */
 }
 
