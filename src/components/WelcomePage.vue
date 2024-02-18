@@ -53,7 +53,8 @@ export default {
 <style scoped>
 /* Styling for layout box */
 .layout-box {
-  background-color: #57B3DB; /* Cobalt Blue */
+  
+  background-color: #0080FE; /* Azure Blue */
   padding: 20px;
   border-radius: 10px;
   text-align: center;
