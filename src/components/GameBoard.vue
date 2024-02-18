@@ -84,6 +84,7 @@ export default {
 .left,
 .right {
   width: 300px; /* Set the width of the left and right boxes */
+  height: 400px; /* Adjust height as needed */
 }
 
 .middle {
