@@ -6,6 +6,9 @@
     <!-- Main heading -->
     <MemoryHeading text="Memory" />
     
+    <!-- Secondary heading -->
+    <h2 class="secondary-heading">Are you ready to play?</h2>
+    
     <!-- Player images -->
     <div class="player-images">
       <img src="@/assets/player1.jpg" alt="Player 1" class="player-image">
@@ -60,6 +63,14 @@ export default {
 .welcome-page {
   text-align: center;
   padding: 20px;
+}
+
+/* Styling for secondary heading */
+.secondary-heading {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 /* Styling for player images */
