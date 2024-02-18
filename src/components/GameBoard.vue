@@ -10,7 +10,10 @@
     <div class="game-board-layout">
       <!-- Left Box -->
       <div class="box-layout left">
-        <div class="player-name">{{ player1Name }}</div>
+        <div class="player-details">
+          <div class="player-name">{{ player1Name }}</div>
+          <div class="player-score">Score: {{ player1Score }}</div>
+        </div>
       </div>
       
       <!-- Middle Box -->
@@ -18,7 +21,10 @@
       
       <!-- Right Box -->
       <div class="box-layout right">
-        <div class="player-name">{{ player2Name }}</div>
+        <div class="player-details">
+          <div class="player-name">{{ player2Name }}</div>
+          <div class="player-score">Score: {{ player2Score }}</div>
+        </div>
       </div>
     </div>
   </div>
@@ -36,7 +42,9 @@ export default {
   data() {
     return {
       player1Name: '',
-      player2Name: ''
+      player2Name: '',
+      player1Score: 0, // Initialize scores
+      player2Score: 0
     };
   },
   created() {
@@ -66,7 +74,6 @@ export default {
   height: 600px; /* Adjust height as needed */
 }
 
-
 /* Styling for Box Layouts */
 .box-layout {
   background-color: #87CEEB; /* Sky Blue */
@@ -91,12 +98,18 @@ export default {
   margin-left: 10px;
 }
 
-
 /* Styling for Player Name */
 .player-name {
   color: #fff; /* White */
   font-size: 18px;
   font-weight: bold;
+  text-align: center;
+}
+
+/* Styling for Player Score */
+.player-score {
+  color: #fff; /* White */
+  font-size: 16px;
   text-align: center;
 }
 </style>
