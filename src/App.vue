@@ -35,15 +35,15 @@ body {
   align-items: center;
 }
 
-/* Layout with cobalt blue background */
 .layout {
   background-color: #0047ab; /* Cobalt blue */
-  width: 100%; /* Full width */
+  width: 100vw; /* Full width of the viewport */
   min-height: 100vh; /* Minimum height of the layout to cover the viewport */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 /* Adjust styles for the entire webpage */
 .welcome-page, .game-board {
