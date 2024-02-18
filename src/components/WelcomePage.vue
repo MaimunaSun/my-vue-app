@@ -84,7 +84,7 @@ export default {
   padding: 20px;
   border-radius: 10px;
   width: 1000px; /* Adjust width as needed */
-  height: 400px; /* Adjust height as needed */
+  height: 600px; /* Adjust height as needed */
 }
 
 /* Styling for secondary heading */
@@ -92,12 +92,12 @@ export default {
   color: #fff;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /* Styling for player images */
 .player-images {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /* Styling for player image */
@@ -109,20 +109,20 @@ export default {
 
 /* Styling for player input fields */
 .player-inputs {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /* Styling for textboxes */
 .name-input {
-  padding: 20px;
-  margin-right: 10px;
+  padding: 10px;
+  margin-right: 20px;
   background-color: aliceblue;
   width: 300px; /* Adjust width as needed */
 }
 
 /* Styling for the Let's Play button */
 .play-button {
-  padding: 20px 20px;
+  padding: 10px 40px;
   background-color: #4caf50;
   color: #fff;
   border: none;
