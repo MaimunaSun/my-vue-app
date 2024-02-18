@@ -1,14 +1,12 @@
 <template>
   <div class="welcome-page">
-    <!-- Pass the "text" prop to the MemoryHeading component -->
-    <MemoryHeading text="Memory" />
-    
+    <MemoryHeading text="Welcome to Memory Game" />
     <div class="player-input">
-      <input type="text" v-model="player1Name" placeholder="Enter Player 1 Name">
-      <input type="text" v-model="player2Name" placeholder="Enter Player 2 Name">
+      <input type="text" v-model="player1Name" placeholder="Enter Player 1 Name" class="name-input">
+      <input type="text" v-model="player2Name" placeholder="Enter Player 2 Name" class="name-input">
     </div>
     <!-- Call startGame method when the button is clicked -->
-    <button @click="startGame">Let's Play</button>
+    <button @click="startGame" class="play-button">Let's Play</button>
   </div>
 </template>
 
@@ -44,21 +42,19 @@ export default {
 
 <style scoped>
 .welcome-page {
+  background-color: #0047ab; /* Cobalt blue */
   text-align: center;
 }
 
-.player-input {
-  margin-bottom: 20px;
-}
-
-input {
+.name-input {
   padding: 10px;
   margin-right: 10px;
+  background-color: aliceblue; /* Alice Blue */
 }
 
-button {
+.play-button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #4caf50; /* Green */
   color: #fff;
   border: none;
   border-radius: 4px;
