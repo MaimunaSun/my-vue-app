@@ -15,7 +15,7 @@
   export default {
     data() {
       return {
-        flipped: true // Initially the card is flipped (back is shown)
+        flipped: false // Initially the card is not flipped
       };
     },
     methods: {
@@ -57,6 +57,7 @@
     align-items: center;
     justify-content: center;
     transform-style: preserve-3d; /* Add this property */
+    transform: rotateY(180deg); /* Initially show the back of the card */
   }
   
   .card-content {
