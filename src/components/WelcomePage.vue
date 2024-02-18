@@ -11,9 +11,15 @@
       <!-- Secondary heading -->
       <h2 class="secondary-heading">Are you ready to play?</h2>
       
-      <!-- Player input fields -->
+      <!-- Player 1 image and input field -->
       <div class="player-input">
+        <img src="@/assets/player1.jpg" alt="Player 1" class="player-image">
         <input type="text" v-model="player1Name" placeholder="Enter Player 1 Name" class="name-input">
+      </div>
+      
+      <!-- Player 2 image and input field -->
+      <div class="player-input">
+        <img src="@/assets/player2.jpg" alt="Player 2" class="player-image">
         <input type="text" v-model="player2Name" placeholder="Enter Player 2 Name" class="name-input">
       </div>
       
@@ -97,4 +103,10 @@ export default {
   margin-top: auto; /* Align button to the bottom of the layout box */
 }
 
+/* Styling for Player Image */
+.player-image {
+  width: 200px; /* Adjust image width as needed */
+  height: 200px; /* Adjust image height as needed */
+  margin-bottom: 10px; /* Add space between image and input field */
+}
 </style>

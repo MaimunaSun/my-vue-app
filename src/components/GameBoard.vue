@@ -122,7 +122,7 @@ export default {
   display: block;
   margin: 0 auto;
   width: 200px; /* Adjust image width as needed */
-  height: 200px; /* Adjust image height as needed */
+  height: 260px; /* Adjust image height as needed */
   border-radius: 50%; /* Make the image circular */
 }
 </style>
