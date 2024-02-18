@@ -1,6 +1,6 @@
 <template>
   <div class="welcome-page">
-    <MemoryHeading text="Welcome to Memory Game" />
+    <MemoryHeading text="Memory" />
     <div class="player-input">
       <input type="text" v-model="player1Name" placeholder="Enter Player 1 Name" class="name-input">
       <input type="text" v-model="player2Name" placeholder="Enter Player 2 Name" class="name-input">
