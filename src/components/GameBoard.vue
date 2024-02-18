@@ -18,7 +18,10 @@
       </div>
       
       <!-- Middle Box -->
-      <div class="box-layout middle"></div>
+      <div class="box-layout middle">
+        <!-- Display CardOne.vue component here -->
+        <CardOne />
+      </div>
       
       <!-- Right Box -->
       <div class="box-layout right">
@@ -35,11 +38,13 @@
 <script>
 import MemoryHeading from './MemoryHeading.vue';
 import ExitButton from './ExitButton.vue'; // Import ExitButton component
+import CardOne from './CardOne.vue'; // Import CardOne component
 
 export default {
   components: {
     MemoryHeading,
-    ExitButton // Register ExitButton component
+    ExitButton, // Register ExitButton component
+    CardOne // Register CardOne component
   },
   data() {
     return {
