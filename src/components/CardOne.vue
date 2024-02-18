@@ -18,7 +18,7 @@
   export default {
     data() {
       return {
-        flipped: false // Initially the card is not flipped
+        flipped: true // Initially the card is flipped (back is shown)
       };
     },
     methods: {
