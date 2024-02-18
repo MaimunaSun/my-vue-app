@@ -76,6 +76,7 @@ export default {
   padding: 10px;
   margin-right: 10px;
   background-color: aliceblue; /* Alice Blue */
+  margin-bottom: 10px; /* Add some space between textboxes and button */
 }
 
 /* Styling for the Let's Play button */
