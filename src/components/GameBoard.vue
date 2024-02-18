@@ -11,6 +11,7 @@
       <!-- Left Box -->
       <div class="box-layout left">
         <div class="player-details">
+          <img src="@/assets/player1.jpg" alt="Player 1" class="player-image">
           <div class="player-name">{{ player1Name }}</div>
           <div class="player-score">Score: {{ player1Score }}</div>
         </div>
@@ -22,6 +23,7 @@
       <!-- Right Box -->
       <div class="box-layout right">
         <div class="player-details">
+          <img src="@/assets/player2.jpg" alt="Player 2" class="player-image">
           <div class="player-name">{{ player2Name }}</div>
           <div class="player-score">Score: {{ player2Score }}</div>
         </div>
@@ -89,7 +91,7 @@ export default {
 }
 
 .middle {
-  width: 700px; /* Set the width of the middle box */
+  width: 800px; /* Set the width of the middle box */
 }
 
 .left {
@@ -113,5 +115,14 @@ export default {
   color: #fff; /* White */
   font-size: 16px;
   text-align: center;
+}
+
+/* Styling for Player Image */
+.player-image {
+  display: block;
+  margin: 0 auto;
+  width: 200px; /* Adjust image width as needed */
+  height: 200px; /* Adjust image height as needed */
+  border-radius: 50%; /* Make the image circular */
 }
 </style>
