@@ -1,7 +1,7 @@
 <template>
   <div class="game-board">
-    <!-- Using the MemoryHeading component -->
-    <MemoryHeading />
+    <!-- Pass the "text" prop to the MemoryHeading component -->
+    <MemoryHeading text="Memory" />
 
     <!-- Add your game logic and UI components here -->
   </div>

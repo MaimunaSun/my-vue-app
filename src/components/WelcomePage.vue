@@ -1,8 +1,8 @@
 <template>
   <div class="welcome-page">
-    <!-- Using the MemoryHeading component -->
-    <MemoryHeading />
-
+    <!-- Pass the "text" prop to the MemoryHeading component -->
+    <MemoryHeading text="Memory" />
+    
     <div class="player-input">
       <input type="text" v-model="player1Name" placeholder="Enter Player 1 Name">
       <input type="text" v-model="player2Name" placeholder="Enter Player 2 Name">
