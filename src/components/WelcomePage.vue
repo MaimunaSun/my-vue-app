@@ -1,5 +1,8 @@
 <template>
   <div class="welcome-page">
+    <!-- Exit Button -->
+    <ExitButton />
+    
     <!-- Main heading -->
     <MemoryHeading text="Memory" />
     
@@ -22,10 +25,12 @@
 
 <script>
 import MemoryHeading from './MemoryHeading.vue';
+import ExitButton from './ExitButton.vue'; // Import ExitButton component
 
 export default {
   components: {
-    MemoryHeading
+    MemoryHeading,
+    ExitButton // Register ExitButton component
   },
   data() {
     return {

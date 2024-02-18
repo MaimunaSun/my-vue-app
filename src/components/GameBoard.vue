@@ -1,5 +1,8 @@
 <template>
   <div class="game-board">
+    <!-- Exit Button -->
+    <ExitButton />
+
     <MemoryHeading text="Memory" />
     <!-- Add your game logic and UI components here -->
   </div>
@@ -7,10 +10,12 @@
 
 <script>
 import MemoryHeading from './MemoryHeading.vue';
+import ExitButton from './ExitButton.vue'; // Import ExitButton component
 
 export default {
   components: {
-    MemoryHeading
+    MemoryHeading,
+    ExitButton // Register ExitButton component
   },
   created() {
     // Access player names from route query parameters
