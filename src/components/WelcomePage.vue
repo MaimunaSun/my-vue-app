@@ -53,7 +53,7 @@ export default {
 <style scoped>
 /* Styling for layout box */
 .layout-box {
-  background-color: #0047ab; /* Cobalt Blue */
+  background-color: #57B3DB; /* Cobalt Blue */
   padding: 20px;
   border-radius: 10px;
   text-align: center;

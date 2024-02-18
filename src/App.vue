@@ -36,7 +36,7 @@ body {
 }
 
 .layout {
-  background-color: #0047ab; /* Cobalt blue */
+  background-color: #57B3DB; /* Cobalt Blue */
   width: 100vw; /* Full width of the viewport */
   min-height: 100vh; /* Minimum height of the layout to cover the viewport */
   display: flex;
