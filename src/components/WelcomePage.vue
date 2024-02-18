@@ -69,6 +69,7 @@ export default {
   font-size: 28px;
   font-weight: bold;
   margin-top: 0; /* Remove top margin */
+  margin-bottom: 20px; /* Increase space between heading and textboxes */
 }
 
 /* Styling for textboxes */
