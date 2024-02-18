@@ -83,8 +83,8 @@ export default {
   background-color: #0F52BA; /* Sapphire Blue */
   padding: 20px;
   border-radius: 10px;
-  width: 1000; /* Adjust width as needed */
-  height: 400; /* Adjust height as needed */
+  width: 1000px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
 }
 
 /* Styling for secondary heading */
@@ -117,6 +117,7 @@ export default {
   padding: 10px;
   margin-right: 10px;
   background-color: aliceblue;
+  width: 300px; /* Adjust width as needed */
 }
 
 /* Styling for the Let's Play button */
