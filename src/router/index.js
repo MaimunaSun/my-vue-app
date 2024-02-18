@@ -22,7 +22,7 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   // Check if the route requires the game to be started
-  if (to.meta.requiresGameStarted && !router.app.$root.gameStarted) {
+  if (to.meta.requiresGameStarted && router.app && router.app.$root && !router.app.$root.gameStarted) {
     next({ name: 'Welcome' }); // Redirect to WelcomePage if game has not started
   } else {
     next(); // Proceed to the next route
@@ -30,5 +30,3 @@ router.beforeEach((to, from, next) => {
 });
 
 export default router;
-
-
