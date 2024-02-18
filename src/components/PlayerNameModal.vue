@@ -21,33 +21,41 @@
     }
   }
   </script>
-  
-  <style scoped>
-  .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  </style>
+
+<style scoped>
+.modal {
+  /* Styles for modal popup */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #87CEEB; /* Light Blue */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%; /* 80% width */
+  max-width: 400px; /* Maximum width */
+}
+
+input {
+  width: calc(100% - 20px); /* 100% width with 10px padding on each side */
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff; /* White */
+  color: #000; /* Black */
+}
+
+button {
+  background-color: #15ff00; /* Green */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0; /* Centered vertically, with 20px top margin */
+}
+</style>
   
   
