@@ -59,11 +59,11 @@ export default {
   background-color: #ba0f3f5c; /* Sapphire Blue */
   padding: 20px;
   border-radius: 10px;
-  margin-top: 20px; /* Add space between the heading/exit button and game board layout */
   display: flex;
   justify-content: space-around;
-  width: 1500px; /* Adjust width as needed */
+  width: 130px; /* Adjust width as needed */
   height: 600px; /* Adjust height as needed */
+  margin-top: 20px; /* Add space between the heading/exit button and game board layout */
 }
 
 /* Styling for Box Layouts */
