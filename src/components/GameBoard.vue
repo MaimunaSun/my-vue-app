@@ -85,7 +85,7 @@ export default {
 .right {
   margin-top: 100px; /* Add space between the heading/exit button and game board layout */
   width: 300px; /* Set the width of the left and right boxes */
-  height: 400px; /* Adjust height as needed */
+  height: 350px; /* Adjust height as needed */
 }
 
 .middle {
