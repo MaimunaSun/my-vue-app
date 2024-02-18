@@ -9,9 +9,9 @@
     <!-- Game Board Layout -->
     <div class="game-board-layout">
       <!-- Three Box Layouts -->
-      <div class="box-layout"></div>
-      <div class="box-layout"></div>
-      <div class="box-layout"></div>
+      <div class="box-layout left"></div>
+      <div class="box-layout middle"></div>
+      <div class="box-layout right"></div>
     </div>
   </div>
 </template>
@@ -46,6 +46,8 @@ export default {
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px; /* Add space between the heading/exit button and game board layout */
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Styling for Box Layouts */
@@ -53,6 +55,14 @@ export default {
   background-color: #87CEEB; /* Sky Blue */
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 20px; /* Add space between box layouts */
+  flex: 1;
+}
+
+.left {
+  margin-right: 10px;
+}
+
+.right {
+  margin-left: 10px;
 }
 </style>
