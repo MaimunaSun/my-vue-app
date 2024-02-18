@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    <!-- Apply background color to the entire webpage -->
-    <router-view v-if="!gameStarted" />
-    <router-view v-else />
+    <!-- Layout with cobalt blue background -->
+    <div class="layout">
+      <!-- Content area with router views -->
+      <router-view v-if="!gameStarted" />
+      <router-view v-else />
+    </div>
   </div>
 </template>
 
@@ -22,15 +25,24 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  height: 100vh; /* Ensure the body takes up the full height of the viewport */
 }
 
 /* Ensure the #app div takes up the full height of the viewport */
 #app {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh; /* Make the app container take the full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Layout with cobalt blue background */
+.layout {
+  background-color: #0047ab; /* Cobalt blue */
+  width: 100%; /* Full width */
+  min-height: 100vh; /* Minimum height of the layout to cover the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Adjust styles for the entire webpage */
@@ -40,12 +52,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-/* Styles for WelcomePage and GameBoard background */
-.welcome-page, .game-board {
-  /* Set the background color */
-  background-color: #0047ab; /* Cobalt blue */
 }
 
 /* Styles for MemoryHeading */
