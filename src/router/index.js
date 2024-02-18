@@ -1,5 +1,6 @@
 // src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router';
+import StartPage from '../components/StartPage.vue'; // Import the StartPage component
 import WelcomePage from '../components/WelcomePage.vue';
 import GameBoard from '../components/GameBoard.vue';
 
@@ -8,6 +9,11 @@ const router = createRouter({
   routes: [
     {
       path: '/',
+      name: 'Start',
+      component: StartPage // Change the component to StartPage
+    },
+    {
+      path: '/welcome',
       name: 'Welcome',
       component: WelcomePage
     },
@@ -15,17 +21,16 @@ const router = createRouter({
       path: '/game',
       name: 'GameBoard',
       component: GameBoard,
-      meta: { requiresGameStarted: true } // Add meta field to indicate route guard requirement
+      meta: { requiresGameStarted: true }
     }
   ]
 });
 
 router.beforeEach((to, from, next) => {
-  // Check if the route requires the game to be started
   if (to.meta.requiresGameStarted && router.app && router.app.$root && !router.app.$root.gameStarted) {
-    next({ name: 'Welcome' }); // Redirect to WelcomePage if game has not started
+    next({ name: 'Welcome' });
   } else {
-    next(); // Proceed to the next route
+    next();
   }
 });
 

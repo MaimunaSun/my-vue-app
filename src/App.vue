@@ -3,20 +3,14 @@
     <!-- Layout with cobalt blue background -->
     <div class="layout">
       <!-- Content area with router views -->
-      <router-view v-if="!gameStarted" />
-      <router-view v-else />
+      <router-view />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
-  data() {
-    return {
-      gameStarted: false
-    };
-  }
+  name: 'App'
 }
 </script>
 
@@ -42,34 +36,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-
-/* Adjust styles for the entire webpage */
-.welcome-page, .game-board {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-/* Styles for MemoryHeading */
-.memory-heading {
-  /* Set the text color */
-  color: #fff; /* White */
-}
-
-/* Styles for textboxes */
-input {
-  /* Set the background color for input boxes */
-  background-color: aliceblue;
-}
-
-/* Styles for the Let's Play button */
-button {
-  /* Set the background color for the button */
-  background-color: green;
-  /* Add other button styles as needed */
 }
 </style>
