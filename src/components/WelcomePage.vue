@@ -1,6 +1,8 @@
 <template>
   <div class="welcome-page">
-    <h1>Welcome to Memory Game</h1>
+    <!-- Using the MemoryHeading component -->
+    <MemoryHeading />
+
     <div class="player-input">
       <input type="text" v-model="player1Name" placeholder="Enter Player 1 Name">
       <input type="text" v-model="player2Name" placeholder="Enter Player 2 Name">
@@ -11,7 +13,12 @@
 </template>
 
 <script>
+import MemoryHeading from './MemoryHeading.vue';
+
 export default {
+  components: {
+    MemoryHeading
+  },
   data() {
     return {
       player1Name: '',
