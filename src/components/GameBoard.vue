@@ -56,7 +56,7 @@ export default {
 
 /* Styling for Game Board Layout */
 .game-board-layout {
-  background-color: #0F52BA; /* Sapphire Blue */
+  background-color: #ba0f3f5c; /* Sapphire Blue */
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px; /* Add space between the heading/exit button and game board layout */
