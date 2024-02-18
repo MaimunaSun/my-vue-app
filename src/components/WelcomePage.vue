@@ -114,7 +114,7 @@ export default {
 
 /* Styling for textboxes */
 .name-input {
-  padding: 10px;
+  padding: 20px;
   margin-right: 10px;
   background-color: aliceblue;
   width: 300px; /* Adjust width as needed */
@@ -122,7 +122,7 @@ export default {
 
 /* Styling for the Let's Play button */
 .play-button {
-  padding: 10px 20px;
+  padding: 20px 20px;
   background-color: #4caf50;
   color: #fff;
   border: none;
