@@ -41,11 +41,7 @@ export default {
 </script>
 
 <style scoped>
-.welcome-page {
-  background-color: #0047ab; /* Cobalt blue */
-  text-align: center;
-}
-
+/* Add styles specific to WelcomePage content */
 .name-input {
   padding: 10px;
   margin-right: 10px;

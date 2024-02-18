@@ -22,8 +22,8 @@ export default {
 </script>
 
 <style scoped>
+/* Add styles specific to GameBoard content */
 .game-board {
-  background-color: #0047ab; /* Cobalt blue */
   text-align: center;
 }
 </style>
