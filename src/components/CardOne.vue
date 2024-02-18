@@ -3,8 +3,8 @@
       <div class="front">
         <!-- Front of Card: Only club.png image and letter "A" -->
         <div class="card-content">
-          <img src="@/assets/club.png" alt="Club" class="suit-image">
           <div class="letter">A</div>
+          <img src="@/assets/club.png" alt="Club" class="suit-image">
         </div>
       </div>
       <div class="back">
@@ -66,10 +66,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: relative;
   }
   
   .letter {
-    margin-bottom: 5px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 10px; /* Adjust font size as needed */
   }
   
   .suit-image {
