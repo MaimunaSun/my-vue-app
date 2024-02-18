@@ -75,13 +75,13 @@ export default {
 /* Styling for welcome page */
 .welcome-page {
   text-align: center;
-  padding: 20px;
+  padding: 40px;
 }
 
 /* Styling for secondary box layout */
 .secondary-box {
   background-color: #0F52BA; /* Sapphire Blue */
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   width: 1000px; /* Adjust width as needed */
   height: 600px; /* Adjust height as needed */
