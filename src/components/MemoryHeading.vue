@@ -15,7 +15,7 @@
   
   <style scoped>
   .memory-heading {
-    margin-top: 5px; /* Adjust the margin-top value to your preference */
+    margin-top: 0; /* Set margin-top to 0 to place it at the top */
     color: #333;
     font-size: 24px;
     font-weight: bold;
