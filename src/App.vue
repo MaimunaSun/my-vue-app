@@ -36,7 +36,7 @@ body {
 }
 
 .layout {
-  background-color: #0080FE; /* Azure Blue */
+  background-color: #0F52BA; /* SAPHIRE Blue */
   width: 100vw; /* Full width of the viewport */
   min-height: 100vh; /* Minimum height of the layout to cover the viewport */
   display: flex;
