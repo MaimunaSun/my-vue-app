@@ -6,26 +6,20 @@
     <!-- Main heading -->
     <MemoryHeading text="Memory" />
     
-    <!-- Layout box for player input and play button -->
-    <div class="layout-box">
-      <!-- Secondary heading -->
-      <h2 class="secondary-heading">Are you ready to play?</h2>
-      
-      <!-- Player 1 image and input field -->
-      <div class="player-input">
-        <img src="@/assets/player1.jpg" alt="Player 1" class="player-image">
-        <input type="text" v-model="player1Name" placeholder="Enter Player 1 Name" class="name-input">
-      </div>
-      
-      <!-- Player 2 image and input field -->
-      <div class="player-input">
-        <img src="@/assets/player2.jpg" alt="Player 2" class="player-image">
-        <input type="text" v-model="player2Name" placeholder="Enter Player 2 Name" class="name-input">
-      </div>
-      
-      <!-- Play button -->
-      <button @click="startGame" class="play-button">Let's Play</button>
+    <!-- Player images -->
+    <div class="player-images">
+      <img src="@/assets/player1.jpg" alt="Player 1" class="player-image">
+      <img src="@/assets/player2.jpg" alt="Player 2" class="player-image">
     </div>
+    
+    <!-- Player input fields -->
+    <div class="player-inputs">
+      <input type="text" v-model="player1Name" placeholder="Enter Player 1 Name" class="name-input">
+      <input type="text" v-model="player2Name" placeholder="Enter Player 2 Name" class="name-input">
+    </div>
+    
+    <!-- Play button -->
+    <button @click="startGame" class="play-button">Let's Play</button>
   </div>
 </template>
 
@@ -62,51 +56,43 @@ export default {
 </script>
 
 <style scoped>
-/* Styling for layout box */
-.layout-box {
-  background-color: #0F52BA; /* SAPHIRE Blue */
-  padding: 20px;
-  border-radius: 10px;
+/* Styling for welcome page */
+.welcome-page {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 500px; /* Adjust the height of the layout box as needed */
+  padding: 20px;
 }
 
-/* Styling for secondary heading */
-.secondary-heading {
-  color: #fff; /* White */
-  font-size: 28px;
-  font-weight: bold;
-  margin-top: 0; /* Remove top margin */
-  margin-bottom: 350px; /* Increase space between heading and textboxes */
+/* Styling for player images */
+.player-images {
+  margin-bottom: 20px;
+}
+
+/* Styling for player image */
+.player-image {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+/* Styling for player input fields */
+.player-inputs {
+  margin-bottom: 20px;
 }
 
 /* Styling for textboxes */
 .name-input {
   padding: 10px;
   margin-right: 10px;
-  background-color: aliceblue; /* Alice Blue */
-  margin-bottom: 5px; /* Add some space between textboxes and button */
+  background-color: aliceblue;
 }
 
 /* Styling for the Let's Play button */
 .play-button {
   padding: 10px 20px;
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  align-self: center; /* Center button horizontally */
-  margin-top: auto; /* Align button to the bottom of the layout box */
-}
-
-/* Styling for Player Image */
-.player-image {
-  width: 50px; /* Adjust image width as needed */
-  height: 50px; /* Adjust image height as needed */
-  margin-bottom: 10px; /* Add space between image and input field */
 }
 </style>
