@@ -1,12 +1,22 @@
 <template>
   <div class="welcome-page">
+    <!-- Main heading -->
     <MemoryHeading text="Memory" />
-    <div class="player-input">
-      <input type="text" v-model="player1Name" placeholder="Enter Player 1 Name" class="name-input">
-      <input type="text" v-model="player2Name" placeholder="Enter Player 2 Name" class="name-input">
+    
+    <!-- Layout box for player input and play button -->
+    <div class="layout-box">
+      <!-- Secondary heading -->
+      <h2 class="secondary-heading">Are you ready to play?</h2>
+      
+      <!-- Player input fields -->
+      <div class="player-input">
+        <input type="text" v-model="player1Name" placeholder="Enter Player 1 Name" class="name-input">
+        <input type="text" v-model="player2Name" placeholder="Enter Player 2 Name" class="name-input">
+      </div>
+      
+      <!-- Play button -->
+      <button @click="startGame" class="play-button">Let's Play</button>
     </div>
-    <!-- Call startGame method when the button is clicked -->
-    <button @click="startGame" class="play-button">Let's Play</button>
   </div>
 </template>
 
@@ -41,13 +51,30 @@ export default {
 </script>
 
 <style scoped>
-/* Add styles specific to WelcomePage content */
+/* Styling for layout box */
+.layout-box {
+  background-color: #0047ab; /* Cobalt Blue */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Styling for secondary heading */
+.secondary-heading {
+  color: #fff; /* White */
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+/* Styling for textboxes */
 .name-input {
   padding: 10px;
   margin-right: 10px;
   background-color: aliceblue; /* Alice Blue */
 }
 
+/* Styling for the Let's Play button */
 .play-button {
   padding: 10px 20px;
   background-color: #4caf50; /* Green */
