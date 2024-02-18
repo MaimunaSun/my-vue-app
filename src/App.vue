@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Apply background color to the entire webpage -->
-    <router-view v-if="!gameStarted" :style="{ backgroundColor: '#0047ab' }" />
+    <router-view v-if="!gameStarted" />
     <router-view v-else />
   </div>
 </template>
@@ -22,9 +22,10 @@ export default {
 body {
   margin: 0;
   padding: 0;
+  height: 100vh; /* Ensure the body takes up the full height of the viewport */
 }
 
-/* Center the content vertically */
+/* Ensure the #app div takes up the full height of the viewport */
 #app {
   display: flex;
   align-items: center;
@@ -33,7 +34,7 @@ body {
 }
 
 /* Adjust styles for the entire webpage */
-router-view {
+.welcome-page, .game-board {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,20 +42,14 @@ router-view {
   color: #2c3e50;
 }
 
-/* Styles for WelcomePage */
-.WelcomePage {
-  /* Set the background color */
-  background-color: #0047ab; /* Cobalt blue */
-}
-
-/* Styles for GameBoard */
-.GameBoard {
+/* Styles for WelcomePage and GameBoard background */
+.welcome-page, .game-board {
   /* Set the background color */
   background-color: #0047ab; /* Cobalt blue */
 }
 
 /* Styles for MemoryHeading */
-.MemoryHeading {
+.memory-heading {
   /* Set the text color */
   color: #fff; /* White */
 }
