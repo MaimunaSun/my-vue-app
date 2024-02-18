@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <router-view /> <!-- Render the appropriate component based on the route -->
+    <WelcomePage v-if="!gameStarted" @start-game="handleStartGame" />
+    <router-view v-else /> <!-- Render the appropriate component based on the route -->
   </div>
 </template>
 
@@ -11,6 +12,19 @@ export default {
   name: 'App',
   components: {
     WelcomePage // Register the WelcomePage component
+  },
+  data() {
+    return {
+      gameStarted: false
+    };
+  },
+  methods: {
+    handleStartGame(players) {
+      // Start the game with the provided players' names
+      console.log('Game starting with players:', players);
+      // Set gameStarted to true to hide the WelcomePage and show the GameBoard
+      this.gameStarted = true;
+    }
   }
 }
 </script>
