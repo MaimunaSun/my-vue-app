@@ -86,10 +86,8 @@ export default {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  align-self: flex-end; /* Align button to the end of the flex container */
-  width: auto; /* Set width to auto to fit the content */
+  align-self: center; /* Center button horizontally */
   margin-top: auto; /* Align button to the bottom of the layout box */
 }
-
 
 </style>
