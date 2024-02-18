@@ -47,7 +47,7 @@ input {
 }
 
 button {
-  background-color: #15ff00; /* Green */
+  background-color: #4caf50; /* Green */
   color: #fff;
   border: none;
   border-radius: 4px;

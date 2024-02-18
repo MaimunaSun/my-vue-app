@@ -13,7 +13,7 @@
       </div>
   
       <!-- Player Name Modal -->
-      <PlayerNameModal v-if="showPlayerNameModal" @submit="startGame" />
+      <PlayerNameModal v-if="showPlayerNameModal" @submit="handleNamesSubmit" />
     </div>
   </template>
   
@@ -35,10 +35,17 @@
       showModal() {
         this.showPlayerNameModal = true;
       },
-      startGame(playerNames) {
+      handleNamesSubmit(names) {
+        // Close the modal after submitting names
+        this.showPlayerNameModal = false;
+  
+        // Navigate to WelcomePage with player names as query parameters
         this.$router.push({ 
           name: 'Welcome',
-          query: playerNames
+          query: {
+            player1Name: names.player1Name,
+            player2Name: names.player2Name
+          }
         });
       }
     }
