@@ -18,11 +18,12 @@
   export default {
     data() {
       return {
-        flipped: false
+        flipped: false // Initially the card is not flipped
       };
     },
     methods: {
       flipCard() {
+        // Toggle the flipped state when the card is clicked
         this.flipped = !this.flipped;
       }
     }
@@ -34,6 +35,7 @@
     width: 50px;
     height: 60px;
     perspective: 1000px;
+    transition: transform 0.5s ease; /* Add transition for smooth flipping effect */
   }
   
   .card div {
@@ -59,7 +61,7 @@
     color: #fff;
     font-size: 24px; /* Adjust font size as needed */
     font-weight: bold;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* Initially show the back of the card */
   }
   
   .card-content {
@@ -81,6 +83,10 @@
   .suit-image {
     width: 30px; /* Adjust image width as needed */
     height: auto; /* Maintain aspect ratio */
+  }
+  
+  .flipped .card {
+    transform: rotateY(180deg); /* Rotate the card to show the front */
   }
   </style>
   
