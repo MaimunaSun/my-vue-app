@@ -3,7 +3,7 @@
       <div class="front">Front of Card</div>
       <div class="back">
         <div class="card-content">
-          <img src="@/assets/club.jpeg" alt="Club" class="suit-image">
+          <img src="@/assets/club.png" alt="Club" class="suit-image">
           <div class="letter">A</div>
         </div>
       </div>

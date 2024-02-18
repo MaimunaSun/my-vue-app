@@ -5,7 +5,7 @@
 
     <!-- Memory Heading -->
     <MemoryHeading text="Memory" />
-
+    
     <!-- Game Board Layout -->
     <div class="game-board-layout">
       <!-- Left Box -->
