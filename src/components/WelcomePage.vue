@@ -80,7 +80,7 @@ export default {
 
 /* Styling for secondary box layout */
 .secondary-box {
-  background-color: #0F52BA; /* Sapphire Blue */
+  background-color: #ba0f0f; /* Sapphire Blue */
   padding: 40px;
   border-radius: 10px;
   width: 1000px; /* Adjust width as needed */
