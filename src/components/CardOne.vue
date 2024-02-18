@@ -72,8 +72,9 @@
   
   .letter {
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 0;
+    left: 0;
+    padding: 5px;
     font-size: 10px; /* Adjust font size as needed */
   }
   
