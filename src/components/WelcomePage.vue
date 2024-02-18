@@ -1,28 +1,33 @@
 <template>
-  <div class="welcome-page">
-    <!-- Exit Button -->
-    <ExitButton />
-    
-    <!-- Main heading -->
-    <MemoryHeading text="Memory" />
-    
-    <!-- Secondary heading -->
-    <h2 class="secondary-heading">Are you ready to play?</h2>
-    
-    <!-- Player images -->
-    <div class="player-images">
-      <img src="@/assets/player1.jpg" alt="Player 1" class="player-image">
-      <img src="@/assets/player2.jpg" alt="Player 2" class="player-image">
+  <div class="welcome-container">
+    <div class="welcome-page">
+      <!-- Exit Button -->
+      <ExitButton />
+      
+      <!-- Main heading -->
+      <MemoryHeading text="Memory" />
+      
+      <!-- Secondary box layout -->
+      <div class="secondary-box">
+        <!-- Secondary heading -->
+        <h2 class="secondary-heading">Are you ready to play?</h2>
+        
+        <!-- Player images -->
+        <div class="player-images">
+          <img src="@/assets/player1.jpg" alt="Player 1" class="player-image">
+          <img src="@/assets/player2.jpg" alt="Player 2" class="player-image">
+        </div>
+        
+        <!-- Player input fields -->
+        <div class="player-inputs">
+          <input type="text" v-model="player1Name" placeholder="Enter Player 1 Name" class="name-input">
+          <input type="text" v-model="player2Name" placeholder="Enter Player 2 Name" class="name-input">
+        </div>
+        
+        <!-- Play button -->
+        <button @click="startGame" class="play-button">Let's Play</button>
+      </div>
     </div>
-    
-    <!-- Player input fields -->
-    <div class="player-inputs">
-      <input type="text" v-model="player1Name" placeholder="Enter Player 1 Name" class="name-input">
-      <input type="text" v-model="player2Name" placeholder="Enter Player 2 Name" class="name-input">
-    </div>
-    
-    <!-- Play button -->
-    <button @click="startGame" class="play-button">Let's Play</button>
   </div>
 </template>
 
@@ -59,10 +64,27 @@ export default {
 </script>
 
 <style scoped>
+/* Styling for welcome container */
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 /* Styling for welcome page */
 .welcome-page {
   text-align: center;
   padding: 20px;
+}
+
+/* Styling for secondary box layout */
+.secondary-box {
+  background-color: #0F52BA; /* Sapphire Blue */
+  padding: 20px;
+  border-radius: 10px;
+  width: 800; /* Adjust width as needed */
+  height: 400; /* Adjust height as needed */
 }
 
 /* Styling for secondary heading */
