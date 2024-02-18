@@ -69,7 +69,7 @@ export default {
   font-size: 28px;
   font-weight: bold;
   margin-top: 0; /* Remove top margin */
-  margin-bottom: 20px; /* Increase space between heading and textboxes */
+  margin-bottom: 40px; /* Increase space between heading and textboxes */
 }
 
 /* Styling for textboxes */
@@ -77,7 +77,7 @@ export default {
   padding: 10px;
   margin-right: 10px;
   background-color: aliceblue; /* Alice Blue */
-  margin-bottom: 10px; /* Add some space between textboxes and button */
+  margin-bottom: 5px; /* Add some space between textboxes and button */
 }
 
 /* Styling for the Let's Play button */
