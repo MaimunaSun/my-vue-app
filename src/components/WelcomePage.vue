@@ -60,7 +60,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 400px; /* Adjust the height of the layout box as needed */
+  height: 500px; /* Adjust the height of the layout box as needed */
 }
 
 /* Styling for secondary heading */
