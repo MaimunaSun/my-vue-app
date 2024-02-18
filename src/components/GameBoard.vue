@@ -3,8 +3,16 @@
     <!-- Exit Button -->
     <ExitButton />
 
+    <!-- Memory Heading -->
     <MemoryHeading text="Memory" />
-    <!-- Add your game logic and UI components here -->
+
+    <!-- Game Board Layout -->
+    <div class="game-board-layout">
+      <!-- Three Box Layouts -->
+      <div class="box-layout"></div>
+      <div class="box-layout"></div>
+      <div class="box-layout"></div>
+    </div>
   </div>
 </template>
 
@@ -30,5 +38,21 @@ export default {
 /* Add styles specific to GameBoard content */
 .game-board {
   text-align: center;
+}
+
+/* Styling for Game Board Layout */
+.game-board-layout {
+  background-color: #0F52BA; /* Sapphire Blue */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px; /* Add space between the heading/exit button and game board layout */
+}
+
+/* Styling for Box Layouts */
+.box-layout {
+  background-color: #87CEEB; /* Sky Blue */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Add space between box layouts */
 }
 </style>
