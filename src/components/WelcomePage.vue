@@ -57,6 +57,10 @@ export default {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px; /* Adjust the height of the layout box as needed */
 }
 
 /* Styling for secondary heading */
@@ -64,7 +68,7 @@ export default {
   color: #fff; /* White */
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 20px; /* Add some space below the heading */
+  margin-top: 0; /* Remove top margin */
 }
 
 /* Styling for textboxes */
