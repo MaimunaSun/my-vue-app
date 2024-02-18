@@ -8,10 +8,18 @@
 
     <!-- Game Board Layout -->
     <div class="game-board-layout">
-      <!-- Three Box Layouts -->
-      <div class="box-layout left"></div>
+      <!-- Left Box -->
+      <div class="box-layout left">
+        <div class="player-name">{{ player2Name }}</div>
+      </div>
+      
+      <!-- Middle Box -->
       <div class="box-layout middle"></div>
-      <div class="box-layout right"></div>
+      
+      <!-- Right Box -->
+      <div class="box-layout right">
+        <div class="player-name">{{ player1Name }}</div>
+      </div>
     </div>
   </div>
 </template>
@@ -25,11 +33,17 @@ export default {
     MemoryHeading,
     ExitButton // Register ExitButton component
   },
+  data() {
+    return {
+      player1Name: '',
+      player2Name: ''
+    };
+  },
   created() {
     // Access player names from route query parameters
     const { player1Name, player2Name } = this.$route.query;
-    console.log('Player 1:', player1Name);
-    console.log('Player 2:', player2Name);
+    this.player1Name = player1Name;
+    this.player2Name = player2Name;
   }
 }
 </script>
@@ -64,5 +78,13 @@ export default {
 
 .right {
   margin-left: 10px;
+}
+
+/* Styling for Player Name */
+.player-name {
+  color: #fff; /* White */
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
 }
 </style>
