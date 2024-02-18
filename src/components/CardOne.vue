@@ -7,10 +7,7 @@
           <img src="@/assets/club.png" alt="Club" class="suit-image">
         </div>
       </div>
-      <div class="back">
-        <!-- Back of Card: Cobalt Blue background -->
-        Back of Card
-      </div>
+      <div class="back"></div>
     </div>
   </template>
   
@@ -59,9 +56,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    font-size: 24px; /* Adjust font size as needed */
-    font-weight: bold;
     transform-style: preserve-3d; /* Add this property */
   }
   
