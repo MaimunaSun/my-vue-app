@@ -35,7 +35,6 @@
     width: 50px;
     height: 60px;
     perspective: 1000px;
-    transition: transform 0.5s ease; /* Add transition for smooth flipping effect */
   }
   
   .card div {
@@ -51,6 +50,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transform-style: preserve-3d; /* Add this property */
+    transition: transform 0.5s ease; /* Add transition for smooth flipping effect */
   }
   
   .back {
@@ -61,7 +62,7 @@
     color: #fff;
     font-size: 24px; /* Adjust font size as needed */
     font-weight: bold;
-    transform: rotateY(180deg); /* Initially show the back of the card */
+    transform-style: preserve-3d; /* Add this property */
   }
   
   .card-content {
