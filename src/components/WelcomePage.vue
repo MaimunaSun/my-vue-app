@@ -105,8 +105,8 @@ export default {
 
 /* Styling for Player Image */
 .player-image {
-  width: 200px; /* Adjust image width as needed */
-  height: 200px; /* Adjust image height as needed */
+  width: 50px; /* Adjust image width as needed */
+  height: 50px; /* Adjust image height as needed */
   margin-bottom: 10px; /* Add space between image and input field */
 }
 </style>
