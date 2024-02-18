@@ -102,8 +102,8 @@ export default {
 
 /* Styling for player image */
 .player-image {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   margin-right: 20px;
 }
 
