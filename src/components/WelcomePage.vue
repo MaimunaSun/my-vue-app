@@ -77,7 +77,6 @@ export default {
   margin-right: 10px;
   background-color: aliceblue; /* Alice Blue */
 }
-
 /* Styling for the Let's Play button */
 .play-button {
   padding: 10px 20px;
@@ -86,5 +85,8 @@ export default {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  align-self: flex-end; /* Align button to the end of the flex container */
+  width: auto; /* Set width to auto to fit the content */
 }
+
 </style>
