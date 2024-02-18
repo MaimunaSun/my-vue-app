@@ -1,5 +1,5 @@
 <template>
-    <h1>{{ text }}</h1>
+    <h1 class="memory-heading">{{ text }}</h1>
   </template>
   
   <script>
@@ -10,12 +10,12 @@
         required: true
       }
     }
-  };
+  }
   </script>
   
   <style scoped>
-  /* Add any styling for your heading component */
-  h1 {
+  .memory-heading {
+    margin-top: 20px; /* Adjust the margin-top value to your preference */
     color: #333;
     font-size: 24px;
     font-weight: bold;
