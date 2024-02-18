@@ -56,14 +56,14 @@ export default {
 
 /* Styling for Game Board Layout */
 .game-board-layout {
-  background-color: #ba0f3f5c; /* Sapphire Blue */
+  background-color: #0F52BA; /* SAPHIRE Blue */
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px; /* Add space between the heading/exit button and game board layout */
   display: flex;
   justify-content: space-around;
-  width: 1400px; /* Adjust width as needed */
-  height: 550px; /* Adjust height as needed */
+  width: 1500px; /* Adjust width as needed */
+  height: 60px; /* Adjust height as needed */
 }
 
 
@@ -80,7 +80,7 @@ export default {
 }
 
 .middle {
-  width: 600px; /* Set the width of the middle box */
+  width: 800px; /* Set the width of the middle box */
 }
 
 .left {
