@@ -62,8 +62,8 @@ export default {
   margin-top: 20px; /* Add space between the heading/exit button and game board layout */
   display: flex;
   justify-content: space-around;
-  width: 800px; /* Adjust width as needed */
-  height: 400px; /* Adjust height as needed */
+  width: 1200px; /* Adjust width as needed */
+  height: 500px; /* Adjust height as needed */
 }
 
 
