@@ -1,6 +1,5 @@
 # my-vue-app
-This project designs and develops a memory game using vu.js javascript framework. Users are first directed to StartPage when aplication is first loaded. The user is than promted to start game where they are made to ente they p,ayer names through a modal popup. Once names are submited they arevdirected to Welcomepage where they visulize they player names and player avatar. They can they press play game if they are eady to play game which than directs them to Game Board page where they can play the game.
-
+This project is a memory game built using the Vue.js JavaScript framework. When the application loads, users are taken to the Start Page. From there, they are prompted to start the game by entering their player names via a modal popup. After submitting their names, users are directed to the Welcome Page, where they can view their player names and avatars. When ready, they can click "Play Game" to proceed to the Game Board page and begin playing.
 ## Project setup
 ```
 npm install
